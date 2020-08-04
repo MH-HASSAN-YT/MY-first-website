@@ -1,0 +1,459 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+}
+body .first {
+  background: url("img/showcase.jpg") no-repeat center center/cover;
+  height: 80vh;
+}
+body .first h1 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+body .first ul {
+  list-style-type: none;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+}
+body header img {
+  width: 100px;
+  transform: translateX(50px);
+}
+body header ul {
+  display: flex;
+  justify-content: space-around;
+}
+body header .navlink {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  margin: 30px;
+}
+body header .navlink:hover {
+  color: #b3b3b3;
+}
+body header #current {
+  border-bottom: 2px solid white;
+}
+body .content {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  color: #ccc;
+  transform: translateX(200px);
+  font-size: 1.5em;
+}
+body .content h1 {
+  animation: text-animation 7s infinite;
+}
+body .content p {
+  font-weight: bolder;
+  margin-top: 10px;
+  color: white;
+}
+body .content button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+body .btn-dark {
+  padding: 15px 20px;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-weight: bolder;
+  transition: all 1.4s;
+}
+body .btn-dark:hover {
+  background-color: #b3b3b3;
+  color: black;
+  cursor: pointer;
+}
+body .btn-light {
+  padding: 15px 20px;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #ffbc00;
+  color: black;
+  font-weight: bolder;
+  transition: all 1.4s;
+}
+body .btn-light:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+@keyframes text-animation {
+  20% {
+    color: black;
+    transform: scale(1.2);
+  }
+  400% {
+    color: red;
+    transform: scale(1);
+  }
+  60% {
+    color: skyblue;
+    transform: scale(0.7);
+  }
+  80% {
+    color: orange;
+    transform: scale(0.3);
+  }
+  100% {
+    color: darkblue;
+    transform: scale(0.1);
+  }
+}
+
+.specialize {
+  margin-top: 2rem;
+  text-align: center;
+}
+.specialize-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+  margin: 1rem 2rem;
+}
+.specialize-list h2 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.workflow {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.statistic {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  text-align: center;
+}
+.statistic h2 {
+  font-family: "Roboto", sans-serif;
+  margin: 20px 1px;
+}
+.statistic div {
+  height: 200px;
+  width: 300px;
+  padding: 50px;
+}
+.statistic div:nth-child(odd) {
+  background-color: #ccc;
+}
+.statistic div:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.packages {
+  text-align: center;
+  margin-top: 70px;
+}
+.packages h1 {
+  margin-bottom: 40px;
+}
+.packages .package {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 100px 30px;
+}
+.packages .package h2 {
+  font-family: "Roboto", sans-serif;
+}
+.packages .package .fas {
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #333;
+  border-radius: 50%;
+  color: white;
+  padding: 30px;
+  transition: all 1s;
+}
+.packages .package-one:hover .fas {
+  transform: scale(1.2);
+  color: black;
+  background-color: white;
+}
+.packages .package-two:hover .fas {
+  transform: scale(1.2);
+  color: black;
+  background-color: white;
+}
+.packages .package-three:hover .fas {
+  transform: scale(1.2);
+  color: black;
+  background-color: white;
+}
+
+.about {
+  height: 100vh;
+}
+.about .first {
+  background-image: none;
+}
+.about .first header {
+  background-color: #333;
+}
+.about .aboutme {
+  display: grid;
+  text-align: center;
+  position: absolute;
+  top: 250px;
+}
+.about .aboutme h2 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.about .aboutme .aboutimage {
+  width: 300px;
+  border: 10px solid #333;
+  border-radius: 50%;
+  justify-self: center;
+}
+.about .aboutme p {
+  font-family: "Dosis", sans-serif;
+  margin: 0px 100px;
+  margin-bottom: 30px;
+}
+.about .aboutme .icon h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+}
+.about .aboutme .icon-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: auto;
+}
+.about .aboutme .icon-list .fas {
+  margin-bottom: 20px;
+}
+
+.progressbarhead {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.progressbar {
+  height: 300px;
+  color: white;
+  background-color: #333;
+  display: grid;
+  align-items: center;
+}
+.progressbar h4 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 6px;
+}
+.progressbar .bar {
+  width: 800px;
+  height: 10px;
+  background-color: #ffbc00;
+}
+.progressbar .bar,
+.progressbar p {
+  display: inline-block;
+}
+.progressbar .photoshop .bar {
+  width: 640px;
+}
+.progressbar .django .bar {
+  width: 440px;
+}
+.progressbar .react .bar {
+  width: 792px;
+}
+.progressbar .react-native .bar {
+  width: 616px;
+}
+
+.techlogo {
+  margin: 0px 30px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.about {
+  height: 100vh;
+}
+
+.mywork {
+  margin-top: 100px;
+  display: block;
+}
+.mywork h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.mywork p {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.mywork .item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  margin: 30px 100px;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  background-color: #ffbc00;
+}
+.mywork .item h3 {
+  transform: translateX(100px) translatey(-200px);
+  opacity: 0;
+  transition: all 2s;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+.mywork .item img {
+  width: 400px;
+  transition: all 1s cubic-bezier(0.2, 0.1, 0.4, 0.2);
+  overflow: hidden;
+}
+.mywork .item-one:hover img, .mywork .item-two:hover img, .mywork .item-three:hover img, .mywork .item-four:hover img, .mywork .item-five:hover img, .mywork .item-six:hover img, .mywork .item-seven:hover img, .mywork .item-eight:hover img {
+  opacity: 0;
+  transform: scale(1.2);
+}
+.mywork .item-one:hover h3, .mywork .item-two:hover h3, .mywork .item-three:hover h3, .mywork .item-four:hover h3, .mywork .item-five:hover h3, .mywork .item-six:hover h3, .mywork .item-seven:hover h3, .mywork .item-eight:hover h3 {
+  opacity: 1;
+}
+
+.about {
+  height: 100vh;
+}
+.about .contact-form {
+  transform: translateX(520px);
+  margin-top: 80px;
+  margin-bottom: 200px;
+  width: 600px;
+}
+.about .contact-form h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.about .contact-form p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Dosis", sans-serif;
+}
+.about .contact-form-input {
+  display: grid;
+  grid-template-areas: "name email" "address phone" "message message";
+  grid-gap: 30px;
+}
+.about .contact-form-input input {
+  height: 30px;
+}
+.about .contact-form-input ::placeholder {
+  color: #333;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about .contact-form .name {
+  grid-area: name;
+}
+.about .contact-form .email {
+  grid-area: email;
+}
+.about .contact-form .address {
+  grid-area: address;
+}
+.about .contact-form .phone {
+  grid-area: phone;
+}
+.about .contact-form .message {
+  grid-area: message;
+}
+.about .contact .btn-dark {
+  width: 600px;
+  padding: 10px;
+}
+.about .contact-medium {
+  background-color: #333;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.about .contact-medium .phone,
+.about .contact-medium .email,
+.about .contact-medium .facebook {
+  margin: 0px 150px;
+  flex: 1;
+  color: white;
+}
+.about .contact-medium .phone .fas,
+.about .contact-medium .phone .fab,
+.about .contact-medium .email .fas,
+.about .contact-medium .email .fab,
+.about .contact-medium .facebook .fas,
+.about .contact-medium .facebook .fab {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about .contact-medium .phone h3,
+.about .contact-medium .email h3,
+.about .contact-medium .facebook h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+.about .contact-medium .phone p,
+.about .contact-medium .email p,
+.about .contact-medium .facebook p {
+  font-family: "Dosis", sans-serif;
+  font-weight: bolder;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: footer-animation 6s infinite;
+}
+
+@keyframes footer-animation {
+  25% {
+    color: white;
+  }
+  50% {
+    color: #ffbc00;
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
